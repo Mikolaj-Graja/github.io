@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            height: 300vh;
+        }
+
+        header {
+            display: block;
+            position: fixed;
+            width: 96%;
+            height: 65vh;
+            margin-top: 5vh;
+            border-radius: .5%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 20vw;
+            /* background-color: #ff895d; */
+            background-image: linear-gradient(to bottom right, #ff895d, #c94747);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        .name {
+            position: relative;
+            width: 100%;
+            height: 20%;
+            margin-bottom: 8vh;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            margin-bottom: 7px;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 30%;
+            height: 50%;
+        }
+
+        .socialContainer {
+            display: flex;
+            position: relative;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 6px;
+            justify-content: space-evenly;
+        }
+
+
+        main {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            /* align-content: stretch; */
+            /* align-items: stretch; */
+            width: 65%;
+            /* background-color: cornflowerblue; */
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 1%;
+            height: 200vh;
+            color: white;
+        }
+
+
+        div.left {
+            background-color: white;
+            flex-grow: 1;
+            /*element elastyczny*/
+            /* padding: 8px 12px; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            flex-basis: 33%;
+            border-top-left-radius: 5%;
+
+
+
+
+        }
+
+        div.right {
+            background-color: darkgray;
+            flex-grow: 1;
+            padding: 8px 12px;
+            /* width: 100%; */
+            flex-basis: 67%;
+            border-top-right-radius: 1%;
+
+        }
+
+        .about {
+            text-transform: none;
+            font-family: "Asap", "Helvetica", "Tahoma", "Arial", sans-serif;
+            color: white;
+            background-color: rgb(66, 66, 66);
+            flex-basis: 34%;
+            padding: 5% 10%;
+            border-top-left-radius: 3%;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            text-transform: inherit;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        #latestProjects {
+            position: absolute;
+            top: -20px;
+            right: 50px;
+            height: 40px;
+            width: 13%;
+            /* background-color: orange; */
+            background-image: linear-gradient(to bottom right, #ff895d, #c94747);
+            text-align: center;
+            /* line-height: 2; */
+            border-radius: 5%;
+        }
+
+        #latestProjects h3 {
+            font-size: 20px;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div>
+                <h3>Hi! I am</h3>
+            </div>
+            <div class="name">
+                <h1>Mikołaj Graja</h1>
+            </div>
+            <div>
+                <h2>I'm Front-end developer</h2>
+            </div>
+            <div class="socialContainer">
+                <div>Github</div>
+                <div>gmail</div>
+                <div>hire me</div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="left">
+            <div class="about">
+                <h2>
+                    About me
+                </h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, molestias odio eaque similique
+                    placeat sint aliquid voluptatem facere quasi sunt? Tempore quis perspiciatis obcaecati aliquid
+                    facere? Vitae sunt amet ullam?
+                </p>
+            </div>
+            <div>2l</div>
+            <div>3l</div>
+        </div>
+        <div class="right">
+            <div id="latestProjects">
+                <h3>Latest projects</h3>
+            </div>
+            <div>1r</div>
+            <div>2r</div>
+            <div>3r</div>
+        </div>
+    </main>
+
+</body>
+
+</html>
