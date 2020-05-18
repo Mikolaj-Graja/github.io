@@ -29,7 +29,9 @@
             transform: translateX(-50%);
             padding: 8px 20vw;
             /* background-color: #ff895d; */
-            background-image: linear-gradient(to bottom right, #ff895d, #c94747);
+            /* background-image: linear-gradient(to bottom right, #ff895d, #c94747); */
+            background-image: linear-gradient(to bottom right, #85DCB4, #41B3A3);
+
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -49,10 +51,32 @@
             font-size: 3.5rem;
         }
 
+        /* 
         h2 {
             text-transform: uppercase;
             font-weight: 500;
             font-size: 2.5rem;
+        } */
+
+        .job {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+
+        .jobs {
+            margin-bottom: 20px;
+        }
+
+        .cursor {
+            opacity: 0;
+            transition: .2s;
+            font-size: 2.5rem;
+        }
+
+
+        .cursor.active {
+            opacity: 1;
         }
 
         h3 {
@@ -109,9 +133,6 @@
             flex-basis: 33%;
             border-top-left-radius: 5%;
 
-
-
-
         }
 
         div.right {
@@ -151,7 +172,9 @@
             height: 40px;
             width: 13%;
             /* background-color: orange; */
-            background-image: linear-gradient(to bottom right, #ff895d, #c94747);
+            /* background-image: linear-gradient(to bottom right, #ff895d, #c94747); */
+            background-image: linear-gradient(to bottom right, #85DCB4, #41B3A3);
+
             text-align: center;
             /* line-height: 2; */
             border-radius: 5%;
@@ -173,8 +196,9 @@
             <div class="name">
                 <h1>Mikołaj Graja</h1>
             </div>
-            <div>
-                <h2>I'm Front-end developer</h2>
+            <div class="jobs">
+                <span class="job"></span>
+                <span class="cursor">|</span>
             </div>
             <div class="socialContainer">
                 <div>Github</div>
@@ -208,7 +232,7 @@
             <div>3r</div>
         </div>
     </main>
-
+    <script src="code.js"></script>
 </body>
 
 </html>
