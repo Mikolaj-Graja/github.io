@@ -17,6 +17,7 @@
             height: 300vh;
         }
 
+        /* HEADER */
         header {
             display: block;
             position: fixed;
@@ -64,7 +65,6 @@
             font-size: 2.5rem;
         }
 
-
         .cursor.active {
             opacity: 1;
         }
@@ -93,7 +93,7 @@
             justify-content: space-evenly;
         }
 
-
+        /* MAIN */
         main {
             position: relative;
             display: flex;
@@ -110,7 +110,7 @@
 
         div.left {
             background-color: white;
-            flex-grow: 1;
+            /* flex-grow: 1; */
             display: flex;
             flex-direction: column;
             justify-content: stretch;
@@ -131,10 +131,11 @@
 
         div.right>div {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
         }
 
-        .about {
+        /* LEFT */
+        .left .about {
             text-transform: none;
             font-family: "Asap", "Helvetica", "Tahoma", "Arial", sans-serif;
             color: white;
@@ -144,17 +145,34 @@
             border-top-left-radius: 3%;
         }
 
-        .about h2 {
+        .left .about h2 {
             margin-bottom: 20px;
             text-transform: inherit;
         }
 
-        p {
+        .left p {
             line-height: 1.5;
             font-size: 1rem;
         }
 
-        #latestProjects {
+        .skills {
+            color: black;
+            text-transform: none;
+            font-family: "Asap", "Helvetica", "Tahoma", "Arial", sans-serif;
+            flex-basis: 34%;
+            padding: 5% 10%;
+        }
+
+        .skills h2 {
+            margin-bottom: 20px;
+        }
+
+        .skills h3 {
+            font-size: 25px;
+        }
+
+        /* RIGHT */
+        .right #latestProjects {
             position: absolute;
             top: -20px;
             right: 50px;
@@ -190,6 +208,16 @@
             position: relative;
             top: 0;
         }
+
+        ul {
+            text-align: center;
+            list-style: none;
+        }
+
+        ul h3 {
+            padding: 20px 0 5px 0;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -212,8 +240,8 @@
                 <div>hire me</div>
             </div>
         </div>
-
     </header>
+
     <main>
         <div class="left">
             <div class="about">
@@ -221,12 +249,30 @@
                     About me
                 </h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, molestias odio eaque similique
-                    placeat sint aliquid voluptatem facere quasi sunt? Tempore quis perspiciatis obcaecati aliquid
-                    facere? Vitae sunt amet ullam?
+                    My education is for most people off. I start as IT specialist at University
                 </p>
             </div>
-            <div>2l</div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <h3>Front-End</h3>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>GIT BASH</li>
+
+                    <h3>Graphics</h3>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe Ilustrator</li>
+                    <li>Inkscape</li>
+
+                    <h3>Soon</h3>
+                    <li>*REACT</li>
+                    <li>**Node.js</li>
+
+                </ul>
+            </div>
             <div>3l</div>
         </div>
         <div class="right">
