@@ -86,11 +86,21 @@
         .socialContainer {
             display: flex;
             position: relative;
-            width: 80%;
+            width: 400px;
+            height: 50px;
             left: 50%;
             transform: translateX(-50%);
             margin-top: 6px;
-            justify-content: space-evenly;
+            justify-content: space-around;
+        }
+
+        .socialContainer div {
+            flex-basis: 105px;
+
+        }
+
+        .socialContainer div~div {
+            flex-basis: 55px;
         }
 
         /* MAIN */
@@ -235,9 +245,9 @@
                 <span class="cursor">|</span>
             </div>
             <div class="socialContainer">
-                <div>Github</div>
-                <div>gmail</div>
-                <div>hire me</div>
+                <div><a href="https://github.com/Mikolaj-Graja"><img src="GitHub_Logo_White.png" alt="Github"></a></div>
+                <div><a href="mailto:mikolajgraja@gmail.com?subject=Work"><img src="mail-64.png" alt=""></a></div>
+                <a href="mailto:mikolajgraja@gmail.com">email</a>
             </div>
         </div>
     </header>
