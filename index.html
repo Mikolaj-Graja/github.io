@@ -29,11 +29,20 @@
             transform: translateX(-50%);
             padding: 8px 20vw;
             background-image: linear-gradient(to bottom right, #85DCB4, #41B3A3);
-
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+        }
 
+        .headerContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 10%;
+            height: 50%;
+            width: 90vw;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .name {
@@ -46,7 +55,7 @@
         h1 {
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
         .job {
@@ -56,6 +65,7 @@
         }
 
         .jobs {
+            position: relative;
             margin-bottom: 20px;
         }
 
@@ -75,13 +85,7 @@
             font-weight: 300;
         }
 
-        .headerContainer {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            top: 10%;
-            height: 50%;
-        }
+
 
         .socialContainer {
             display: flex;
@@ -128,23 +132,27 @@
         div.left {
             background-color: white;
             /* flex-grow: 1; */
+            flex-basis: 33%;
+
             display: flex;
             flex-direction: column;
             justify-content: stretch;
-            flex-basis: 33%;
             border-top-left-radius: 5%;
 
         }
 
         div.right {
+
             background-color: rgb(169, 191, 191);
+            border-top-right-radius: 1%;
+            /* FLEX ELEMENT */
             flex-grow: 1;
             flex-basis: 67%;
-            border-top-right-radius: 1%;
+
+            /* FLEX CONTAINER  */
             display: flex;
             flex-direction: column;
             justify-content: stretch;
-            transition: 1s linear;
         }
 
 
@@ -258,6 +266,60 @@
         ul h3 {
             padding: 20px 0 5px 0;
             text-decoration: underline;
+        }
+
+        @media screen and (max-width: 1024px) {
+            header {
+                position: relative;
+                width: 100%;
+            }
+
+            main {
+                position: relative;
+                display: block;
+                flex-direction: column;
+                width: 100%;
+                top: 0;
+            }
+
+            .right,
+            .left {
+                position: relative;
+                flex-basis: auto;
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            #me {
+                height: 20vh;
+                width: 15vh;
+                position: absolute;
+            }
+
+            #me img {
+                border-top-left-radius: 0;
+            }
+
+            .about h2,
+            .about p {
+                padding-left: 60px;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            #me {
+                display: none;
+            }
+
+            .about h2,
+            .about p {
+                padding: 5px;
+            }
+
+            .socialContainer {
+                position: absolute;
+                bottom: -100px;
+            }
         }
     </style>
 </head>
