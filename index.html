@@ -204,6 +204,8 @@
             font-size: 25px;
         }
 
+
+
         /* RIGHT */
         div.right>div {
             width: 100%;
@@ -266,6 +268,35 @@
         ul h3 {
             padding: 20px 0 5px 0;
             text-decoration: underline;
+        }
+
+        #myGraphics {
+            flex-basis: 33%;
+            width: 100%;
+            display: flex;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: none;
+            overflow: hidden;
+        }
+
+        #myGraphics img {
+            max-width: 33.4%;
+            height: 35%;
+            transition: none;
+        }
+
+        #myGraphics img:hover {
+            transform: scale(1.05);
+        }
+
+        #army {
+            order: 2;
+        }
+
+        #obrona {
+            order: 3;
         }
 
         @media screen and (max-width: 1024px) {
@@ -395,6 +426,7 @@
             </div>
             <div id="me"><img src="PhotoMe.jpeg" alt=""></div>
         </div>
+
         <div class="right">
             <div id="latestProjects">
                 <h3>Latest projects</h3>
@@ -405,6 +437,11 @@
                         alt="Pong animation"></div></a>
             <div class="imgContainer clock"><a href="https://mikolaj-graja.github.io/Clock/"><img src="clock.png"
                         alt="clock"></div></a>
+            <div id="myGraphics">
+                <img id="army" src="graphicDesigns/armymarkt.png" alt="">
+                <img src="graphicDesigns/Gbit.png" alt="">
+                <img id="obrona" src="graphicDesigns/Obrona.png" alt="">
+            </div>
         </div>
     </main>
     <script src="code.js"></script>
