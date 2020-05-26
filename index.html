@@ -123,7 +123,6 @@
             top: 20%;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 1%;
             height: 200vh;
             color: white;
         }
@@ -137,14 +136,17 @@
             display: flex;
             flex-direction: column;
             justify-content: stretch;
-            border-top-left-radius: 5%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
 
         }
 
         div.right {
 
             background-color: rgb(169, 191, 191);
-            border-top-right-radius: 1%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
             /* FLEX ELEMENT */
             flex-grow: 1;
             flex-basis: 67%;
@@ -160,11 +162,11 @@
         /* LEFT */
         #me {
             order: -1;
-            border-top-left-radius: 5%;
+            border-top-left-radius: 10px;
         }
 
         #me img {
-            border-top-left-radius: 5%;
+            border-top-left-radius: 20px;
         }
 
         .left .about {
@@ -246,10 +248,14 @@
 
         .toDoList img {
             top: -10px;
+            width: 110%;
+            height: 105%;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .toDoList {
-            border-top-right-radius: 5%;
+            flex-basis: 30%;
 
         }
 
@@ -259,7 +265,11 @@
             top: 0;
             /* border-top-right-radius: 5%; */
         }
-
+        .competences{
+            order: -1;
+            flex-basis: 60%;
+            border-top-right-radius: 20px;
+        }
         ul {
             text-align: center;
             list-style: none;
@@ -271,7 +281,7 @@
         }
 
         #myGraphics {
-            flex-basis: 33%;
+            flex-basis: 13%;
             width: 100%;
             display: flex;
             position: relative;
@@ -279,11 +289,12 @@
             transform: translateX(-50%);
             transition: none;
             overflow: hidden;
+            border-bottom-right-radius: 20px;
         }
 
         #myGraphics img {
             max-width: 33.4%;
-            height: 35%;
+            height: 100%;
             transition: none;
         }
 
@@ -298,6 +309,7 @@
         #obrona {
             order: 3;
         }
+
 
         @media screen and (max-width: 1024px) {
             header {
@@ -437,6 +449,10 @@
                         alt="Pong animation"></div></a>
             <div class="imgContainer clock"><a href="https://mikolaj-graja.github.io/Clock/"><img src="clock.png"
                         alt="clock"></div></a>
+            <div class="imgContainer competences"><a href="https://mikolaj-graja.github.io/MCI_kompetencje/"><img src="kompetencje.jpg"
+                        alt="projectCompetences"></div></a>
+                        
+
             <div id="myGraphics">
                 <img id="army" src="graphicDesigns/armymarkt.png" alt="">
                 <img src="graphicDesigns/Gbit.png" alt="">
