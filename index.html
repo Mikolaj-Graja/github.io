@@ -224,7 +224,7 @@
             top: -20px;
             right: 50px;
             height: 40px;
-            width: 150px;
+            width: 100px;
             background-image: linear-gradient(to bottom right, #85DCB4, #41B3A3);
             text-align: center;
             border-radius: 5%;
@@ -232,9 +232,12 @@
         }
 
         #latestProjects h3 {
-            font-size: 15px;
+            font-size: 17px;
             line-height: 2;
-            padding: 5px;
+            /* padding: 5px; */
+            /* text-transform: uppercase; */
+            letter-spacing: -0.01em;
+            font-weight: 800;
         }
 
         img {
@@ -266,9 +269,19 @@
             /* border-top-right-radius: 5%; */
         }
         .competences{
-            order: -1;
-            flex-basis: 60%;
+            /* order: -1; */
+            flex-basis: 30%;
+            border-bottom-right-radius: 20px;
+            flex-grow: 1;
+        }
+        .moviedb{
+            flex-basis: 30%;
             border-top-right-radius: 20px;
+            flex-grow: 1;
+        }
+        .tvmaze{
+            flex-basis: 20%;
+
         }
         ul {
             text-align: center;
@@ -281,7 +294,7 @@
         }
 
         #myGraphics {
-            flex-basis: 13%;
+            flex-basis: 11%;
             width: 100%;
             display: flex;
             position: relative;
@@ -412,11 +425,9 @@
                 </h2>
                 <p>
                     My education and my job experience is for most people interesting. I start learning IT at
-                    University and then after 5 years I become a psychologist at the same univerity. In the meantime I
+                    University and after a year of studing I start learning psychology at the same univerity and after 5 years I become a psychologist. In the meantime I
                     worked at diffrent positions and learn how to use some graphic design programs. One of my jobs was
-                    in printing house where I worked in prepress state, manipulating the .svg and .PSD files and in
-                    press
-                    state too. I was freelacing, making logo designes and websites for my clients, mostly in wordpress.
+                    in printing house where I worked in prepress state, manipulating the .svg and .PSD files. I was also freelacing, making logo designes and websites for my clients, mostly in wordpress.
             </div>
             <div class="skills">
                 <h2>Skills</h2>
@@ -426,6 +437,8 @@
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>GIT BASH</li>
+                    <li>REACT</li>
+                    <li>Vue</li>
 
                     <h3>Graphics</h3>
                     <li>Adobe Photoshop</li>
@@ -433,9 +446,12 @@
                     <li>Adobe Ilustrator</li>
                     <li>Inkscape</li>
 
-                    <h3>Soon</h3>
-                    <li>*REACT</li>
-                    <li>**Node.js</li>
+                    <h3>Social</h3>
+                    <li>Communicative</li>
+                    <li>Honest</li>
+                    <li>Loyal</li>
+                    <li>Punctual</li>
+                    <li>Hard-working</li>
 
                 </ul>
             </div>
@@ -446,27 +462,29 @@
             <div id="latestProjects">
                 <h3><a href="https://github.com/Mikolaj-Graja">Projects</a></h3>
             </div>
-            <div class="imgContainer"><a href="https://mikolaj-graja.github.io/Movie-DB/"><img
+            <div class="imgContainer moviedb"><a href="https://mikolaj-graja.github.io/Movie-DB/"><img
                 src="MovieDB.png" alt="project TVMaze"></div></a>
 
-            <div class="imgContainer"><a href="https://mikolaj-graja.github.io/TVMaze-with-React/"><img
+            <div class="imgContainer tvmaze"><a href="https://mikolaj-graja.github.io/TVMaze-with-React/"><img
                 src="Shows_from_TVMaze.png" alt="project TVMaze"></div></a>
+
+                <div class="imgContainer competences"><a href="https://mikolaj-graja.github.io/MCI_kompetencje/"><img src="kompetencje.jpg"
+                    alt="projectCompetences"></div></a>
             
-            <div class="imgContainer toDoList"><a href="https://mikolaj-graja.github.io/To_Do_List/"><img
-                        src="listaZadanTasks.png" alt="To_Do_List"></div></a>
-            <div class="imgContainer Pong"><a href="https://mikolaj-graja.github.io/pong/"><img src="Pong1.png"
-                        alt="Pong animation"></div></a>
-            <div class="imgContainer clock"><a href="https://mikolaj-graja.github.io/Clock/"><img src="clock.png"
-                        alt="clock"></div></a>
-            <div class="imgContainer competences"><a href="https://mikolaj-graja.github.io/MCI_kompetencje/"><img src="kompetencje.jpg"
-                        alt="projectCompetences"></div></a>
+            <!-- <div class="imgContainer toDoList"><a href="https://mikolaj-graja.github.io/To_Do_List/"><img
+                        src="listaZadanTasks.png" alt="To_Do_List"></div></a> -->
+            <!-- <div class="imgContainer Pong"><a href="https://mikolaj-graja.github.io/pong/"><img src="Pong1.png"
+                        alt="Pong animation"></div></a> -->
+            <!-- <div class="imgContainer clock"><a href="https://mikolaj-graja.github.io/Clock/"><img src="clock.png"
+                        alt="clock"></div></a> -->
+
                         
 
-            <div id="myGraphics">
+            <!-- <div id="myGraphics">
                 <img id="army" src="graphicDesigns/armymarkt.png" alt="">
                 <img src="graphicDesigns/Gbit.png" alt="">
                 <img id="obrona" src="graphicDesigns/Obrona.png" alt="">
-            </div>
+            </div> -->
         </div>
     </main>
     <script src="code.js"></script>
